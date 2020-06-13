@@ -25,7 +25,7 @@ class SearchBar extends React.Component {
         <label>
           <input type="text" value={this.state.value} onChange={this.handleChange} />
         </label>
-        <input type="submit" value="Search" />
+        <button type="submit" value="Search" />
       </form>
     );
   }
