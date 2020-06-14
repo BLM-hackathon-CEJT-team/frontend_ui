@@ -6,6 +6,7 @@ import SearchBar from './SearchBar'
 import InfoContainer from './InfoContainer'
 import TagForm from './TagForm'
 import Backdrop from './Backdrop'
+import CommunityBoardMembers from './CommunityBoardMembers'
 
 import classes from './ResultPage.module.css'
 
@@ -129,9 +130,10 @@ const data = [
 const ResultPage = () => {
     const [ showTags, setShowTags ] = useState(false)
     const [ showInfo, setShowInfo ] = useState(false)
+    const [ showBoardMembers, setShowBoardMembers ] = useState(false)
     const [ currentIndex, setCurrentIndex ] = useState(-1)
     const [ tags, setTags ] = useState([])
-
+    console.log(showBoardMembers)
     const setInfoHandler = index => {
         setShowInfo(true)
         setCurrentIndex(index)
@@ -159,7 +161,8 @@ const ResultPage = () => {
                             title = { person.role.title }
                             tag = { person.role.tag }
                             description = { person.role.description }
-                            clicked = { () => setInfoHandler(index) } /> )}
+                            clicked = { () => setInfoHandler(index) }
+                            setShowBoardMembers = { setShowBoardMembers } /> )}
                 </div>
                 { 
                     showInfo 
@@ -167,7 +170,7 @@ const ResultPage = () => {
                         : null 
                 }
             </div>
-            
+            { showBoardMembers ? <CommunityBoardMembers /> : null }
         </section>
     )
 }
