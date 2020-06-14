@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
+import icon from './location_icon.png';
 
 class SearchBar extends React.Component {
   constructor(props) {
@@ -15,18 +16,24 @@ class SearchBar extends React.Component {
   }
 
   handleSubmit(event) {
+      let path = `newPath`;
     // alert('Information accepted ' + this.state.value);
     event.preventDefault();
   }
 
   render() {
     return (
+    <div className="container">
+        <div className="buttonHandle">
       <form onSubmit={this.handleSubmit}>
         <label>
-          <input type="text" value={this.state.value} onChange={this.handleChange} />
+          <input type="text" placeholder="Enter your ZIP code" value={this.state.value} onChange={this.handleChange} />
         </label>
-        <button type="submit" value="Search" />
+        <button type="button" onClick={this.handleSubmit}>search</button><img src={icon} alt="Location icon"/> 
+         
       </form>
+      </div>
+    </div>
     );
   }
 }
