@@ -1,8 +1,7 @@
 import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
 import icon from './location_icon.png';
-import firstH from './firstheading.PNG';
-import secondH from './secondheading.PNG';
+import logo from './civicSavvyLogo.PNG';
 
 class SearchBar extends React.Component {
   constructor(props) {
@@ -26,11 +25,12 @@ class SearchBar extends React.Component {
   render() {
     return (
     <div className="container">
+        <img src={logo} alt="Logo"/>
         <div className="wordOne">
             <h3>Get to know your local representatives</h3>
         </div>
         <div className="wordTwo">
-            <p>Jpo  We help you discover your local representatives, what their roles are, and how to contact them.</p>
+            <p>We help you discover your local representatives, what their roles are, and how to contact them.</p>
         </div>
         <div className="buttonHandle">
       <form onSubmit={this.handleSubmit}>
