@@ -2,8 +2,8 @@
     background-color: transparent;
     height: 100px;
     width: 200px;
-    position: absolute;
     cursor: pointer;
+    position: relative;
 }
 
 .Picture {
@@ -64,20 +64,28 @@
 .Pin1 {
     top: 30%;
     left: 20%;
+    position: absolute;
 }
 
 .Pin2 {
     top: 50%;
     left: 10%;
+    position: absolute;
 }
 
 .Pin3 {
     top: 25%;
     left: 50%;
+    position: absolute;
 }
 
 .Pin4 {
     left: 60%;
     top: 50%;
+    position: absolute;
+}
+
+.White {
+    background-color: white;
 }
 

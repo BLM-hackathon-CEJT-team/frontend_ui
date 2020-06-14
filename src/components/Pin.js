@@ -4,6 +4,7 @@ import ericAdams from '../Assets/ericAdams.jpg'
 import scottStringer from '../Assets/scottStringer.jpg'
 import juamaaneWilliams from '../Assets/JumaaneWilliams.png'
 import communityBoard from '../Assets/communityBoard.jpg'
+import logo from '../Assets/civicSavvyLogo.png'
 
 import classes from './Pin.module.css'
 
@@ -23,7 +24,7 @@ const getImageSrc = index => {
         case 3:
             src = communityBoard
             break
-        default: return // ERROR
+        default: src = logo // ERROR
     }
 
     return src
@@ -45,22 +46,33 @@ const getPinClass = index => {
         case 3:
             cssClass = classes.Pin4
             break
-        default: return // ERROR
+        default: cssClass = "" 
     }
 
     return cssClass
 }
 
-const Pin = ({ name, title, tag, clicked, index }) => {
+/*
+    Pins for our visualization. If setWhite is true and a white background to the pin 
+    picture.
+*/
+const Pin = ({ name, title, tag, clicked, index, setShowBoardMembers, setWhite }) => {
     const cssClasses = [ classes.Pin ]
+    const pictureClasses = [ classes.Picture]
     const positionClass = getPinClass(index)
     cssClasses.push(positionClass)
     
+    if (setWhite) {
+        pictureClasses.push(classes.White)
+    }
+
     return (
         <div 
             className = { cssClasses.join(' ') }
-            onClick = { clicked }>
-            <div className = { classes.Picture }>
+            onClick = { clicked }
+            onMouseEnter = { index === 3 ? () => setShowBoardMembers(true) : null }
+            onMouseLeave = { index === 3 ? () => setShowBoardMembers(false) : null }>
+            <div className = { pictureClasses.join(' ') }>
                 <img className = { classes.Image } src = { getImageSrc(index) } />
             </div>
             <div className = { classes.Info }>
