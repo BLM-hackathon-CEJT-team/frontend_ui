@@ -1,8 +1,5 @@
 import React, {Component} from 'react';
-import ReactDOM from 'react-dom';
 import icon from '../Assets/location_icon.png';
-import firstH from '../Assets/firstheading.png'
-import secondH from '../Assets/secondheading.png';
 import logo from '../Assets/civicSavvyLogo.png';
 
 class SearchBar extends React.Component {
@@ -40,7 +37,7 @@ class SearchBar extends React.Component {
       <label>
         <input type="text" placeholder="Enter your ZIP code" value={this.state.value} onChange={this.handleChange} />
       </label>
-      <button type="button" onClick={this.handleSubmit}>search</button><img src={icon} alt="Location icon"/>        
+      <button type="button" onClick={this.handleSubmit}>Search</button><img src={icon} alt="Location icon"/>        
     </form>
     </div>
   </div>

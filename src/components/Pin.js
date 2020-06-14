@@ -1,9 +1,9 @@
 import React from 'react'
 
-import ericAdams from '../Assets/ericAdams.jpg'
-import scottStringer from '../Assets/scottStringer.jpg'
-import juamaaneWilliams from '../Assets/JumaaneWilliams.png'
-import communityBoard from '../Assets/communityBoard.jpg'
+import ericAdams from '../Assets/ericAdams Cropped.jpg'
+import scottStringer from '../Assets/scottStringer Cropped.jpg'
+import juamaaneWilliams from '../Assets/Jumaane Williams.png'
+import communityBoard from '../Assets/communityBoard Cropped.jpg'
 import logo from '../Assets/civicSavvyLogo.png'
 
 import classes from './Pin.module.css'
