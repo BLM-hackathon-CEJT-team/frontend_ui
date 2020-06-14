@@ -8,7 +8,7 @@ class SearchBar extends React.Component {
   constructor(props) {
     super(props);
     this.state = {value: ''};
-
+    this.props = props
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
   }
@@ -21,7 +21,7 @@ class SearchBar extends React.Component {
       let path = `newPath`;
     // alert('Information accepted ' + this.state.value);
     event.preventDefault();
-    props.history.push("/results")
+    this.props.history.push("/results")
   }
 
   render() {
