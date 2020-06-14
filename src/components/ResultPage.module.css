@@ -1,0 +1,30 @@
+.ResultPage {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    display: flex;
+    background: radial-gradient(circle, rgba(204,204,204,.9) 9%, rgba(213,222,217,.9) 100%), url('../Assets//bensonhurst.png');
+    background-size: cover;
+}
+
+.Container {
+    position: relative;
+}
+
+.Container,
+.HalfContainer {
+    width: 93vw;
+    height: 100%;
+    display: flex;
+}
+
+.ContentFull {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.ContentHalf {
+    width: 50%;
+    display: flex;
+}

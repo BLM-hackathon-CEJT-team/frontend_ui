@@ -1,0 +1,45 @@
+.InfoContainer {
+    width: 50%;
+    height: 100%;
+    background-color: #eee;
+    position: absolute;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 200;
+}
+
+.InfoHeader,
+.Label,
+.ContactInfoData,
+.RoleContainer {
+    margin-left: 1.5rem;
+}
+
+.ContactInfoContainer {
+    margin-left: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    border-bottom: .5px solid #ccc;
+}
+
+.ContactInfo {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    color: orange;
+    font-size: .8rem;
+}
+
+.RoleContainer {
+    width: 90%;
+}
+
+.CloseIcon {
+    position: absolute;
+    right: 5%;
+    top: 5%;
+    cursor: pointer;
+}
