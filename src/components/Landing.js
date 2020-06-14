@@ -21,6 +21,7 @@ class SearchBar extends React.Component {
       let path = `newPath`;
     // alert('Information accepted ' + this.state.value);
     event.preventDefault();
+    props.history.push("/results")
   }
 
   render() {
