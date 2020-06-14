@@ -1,5 +1,5 @@
 html { 
-  background: url("blm_map_background.PNG") no-repeat center center fixed; 
+  background: url("Landing-bg.png") no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -13,12 +13,12 @@ body {
 
 .container {
   text-align: center;
-  padding-top: 100px;
+  padding-top: 80px;
 } 
 
-.container img {
+/* .container img {
     opacity: 1.0;
-}
+} */
 
 .buttonHandle h1 {
     font-family: Bitter;
@@ -45,9 +45,10 @@ body {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  border-radius: 18px;
+  border-radius: 54px;
   font-size: 12px;
   font-weight: bold;
+  width: 123px;
   /* margin-block-start: .3px; */
 }
  .buttonHandle button:hover {
@@ -55,8 +56,9 @@ body {
 }
 
 .buttonHandle input {
-    padding: 8px 12px;
+    padding: 8px 20px;
     padding-right: 60px;
+    width: 170px;
 } 
 
 .buttonHandle img {
