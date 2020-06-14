@@ -11,7 +11,7 @@
     width: 30%;
     border-radius: 50%;
     background-color: black;
-    border: 3px solid skyblue;
+    border: 3px solid #4785BF;
     left: 50%;
     position: absolute;
     transform: translateX(-50%);
@@ -20,7 +20,7 @@
 .Info {
     height: 40%;
     width: 80%;
-    background-color: skyblue;
+    background-color: #4785BF;
     border-radius: 1rem;
     top: 47%;
     left: 50%;
